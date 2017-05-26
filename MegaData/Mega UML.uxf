@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>430</y>
+      <w>440</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Node&lt;Type&gt;
+--
+Data Members
+
+-nodeData:Type
+
+--
+Constructors
+
+
+
+
+Methods</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>80</y>
+      <w>380</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>IntNode
+--
+-nodeData:int
+-nodePointer : IntNode *
+--
++ getNodeData():int
++getNodePointer():IntNode*
++setNodeData(int value):void 
++setNodePointer( IntNode* next):void
+
++IntNode():constructor
++IntNode(int value): init
++IntNode(int value, IntNode* nextNode):constructor
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>90</y>
+      <w>290</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>IntNodeArray
+--
+-size:int
+-front:IntNode*
+--
++IntNodeArray(int size) : constructor
++setAtIndex(int index, int value): void
++getFromIndex(int index): int
++getSize(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>170</x>
+      <y>30</y>
+      <w>780</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>EmptyPackage
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
